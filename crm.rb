@@ -3,11 +3,11 @@
 # You'll have to implement it from scratch.
 require_relative 'contact'
 require 'sinatra'
-
+require 'pry'
 # Fake data
-# Contact.create('Mark', 'Zuckerberg', 'mark@facebook.com', 'CEO')
-# Contact.create('Sergey', 'Brin', 'sergey@google.com', 'Co-Founder')
-# Contact.create('Steve', 'Jobs', 'steve@apple.com', 'Visionary')
+Contact.create('Mark', 'Zuckerberg', 'mark@facebook.com', 'CEO')
+Contact.create('Sergey', 'Brin', 'sergey@google.com', 'Co-Founder')
+Contact.create('Steve', 'Jobs', 'steve@apple.com', 'Visionary')
 
 get '/' do
   @crm_app_name = "Amanda's CRM"
@@ -15,10 +15,10 @@ get '/' do
 end
 
 get '/contacts' do
-  Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
+  erb :contacts
 end
 
-get '/contacts/new' do
+get '/new_contact' do
   erb :new_contact
 end
 
