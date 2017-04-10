@@ -7,6 +7,10 @@ html {
   font-family: 'Palanquin Dark', sans-serif;
 }
 
+body{
+  margin: 0px;
+}
+
 .home_title {
   color: white;
   background-color: #3E3A3A;
@@ -25,13 +29,30 @@ html {
 
 .home_nav_items {
   background-color: #BAB5B5;
-  margin: 1px;
-
+  margin: 1px 0px 1px 0px;
 }
 
 .home_contact_display{
   list-style-type: none;
   text-align: left;
+  padding: 0px;
+  margin: 10px 15px 10px 15px;
+}
+
+#contact_list_item{
+  padding: 5px;
+}
+
+.contact-count {
+  color: black;
+  background-color: #DCAFF3;
+  line-height: 45px;
+}
+
+.contact_list {
+  color: black;
+  line-height: 45px;
+  background-color: #FED713;
 }
 
 footer {
@@ -41,4 +62,5 @@ footer {
   color: white;
   text-align: center;
   width: 100%;
+  margin: 0px;
 }
