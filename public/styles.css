@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {box-sizing: border-box;}
+
+html {
+  text-align: center;
+  font-family: 'Palanquin Dark', sans-serif;
+}
+
+.home_title {
+  color: white;
+  background-color: #3E3A3A;
+  width: 100%;
+}
+
+#title {
+  margin: 1px 0px 1px 0px;
+}
+
+.home_nav {
+  color: white;
+  list-style-type: none;
+  width: 100%;
+}
+
+.home_nav_items {
+  background-color: #BAB5B5;
+  margin: 1px;
+
+}
+
+.home_contact_display{
+  list-style-type: none;
+  text-align: left;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="http://localhost:4567/styles.css" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="home_title">
+        <h1 id="title">Amanda's CRM</h1>
+      </div>
+    </header>
+    <nav class="home_nav">
+      <li class="home_nav_items"><a href="/">Home</a></li>
+      <li class="home_nav_items"><a href="/">View All Contacts</a></li>
+      <li class="home_nav_items"><a href="/new_contact">Add A New Contact</a></li>
+      <li class="home_nav_items"><a href="/">About</a></li>
+    </nav>
+
+    <%= yield %>
+
+    <footer>&copy; Amanda Punsammy 2017 </footer>
+
+  </body>
+</html>
