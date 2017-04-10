@@ -29,7 +29,8 @@ body{
 
 .home_nav_items {
   background-color: #BAB5B5;
-  margin: 1px 0px 1px 0px;
+  margin-bottom: 1px;
+  margin-top: 1px;
 }
 
 .home_contact_display{
