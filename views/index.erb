@@ -1,11 +1,11 @@
 
   <body>
     <ul class="home_contact_display">
-      <div class="contact-count">
+      <div class="contact_count">
         <li id="contact_list_item">There are <%=Contact.all.length%> contacts!<contacts</li>
       </div>
       <% Contact.all.each do |contact| %>
-      <div class="contact-list">
+      <div class="contact_list">
         <li id="contact_list_item"><%= contact.first_name %> <%=contact.last_name %> <span>(<%=contact.email%>)<span></li>
         <li id="contact_list_item"><a href="/contacts/<%=contact.id%>/edit">Edit</a> | <a href="/contacts ">Delete</a></li>
       </div>

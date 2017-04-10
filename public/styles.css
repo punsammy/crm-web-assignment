@@ -41,9 +41,10 @@ body{
 
 #contact_list_item{
   padding: 5px;
+  margin: 5px;
 }
 
-.contact-count {
+.contact_count {
   color: black;
   background-color: #DCAFF3;
   line-height: 45px;
