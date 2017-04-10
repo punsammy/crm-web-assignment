@@ -4,7 +4,12 @@ require_relative '../contact'
 class TestContact < Minitest::Test
 
   def setup
-    @contact = Contact.create('Grace', 'Hopper', 'grace@hopper.com', 'computer scientist')
+    @contact = Contact.create(
+    first_name: 'Grace',
+    last_name:  'Hopper',
+    email:      'grace@hopper.com',
+    note:       'computer scientist')
+    # @contact = Contact.create('Grace', 'Hopper', 'grace@hopper.com', 'computer scientist')
   end
 
   def teardown
@@ -33,7 +38,7 @@ class TestContact < Minitest::Test
   end
 
   def test_update
-    @contact.update('note', 'wrote the first compiler in 1952')
+    @contact.update(note: 'wrote the first compiler in 1952')
     assert_equal 'wrote the first compiler in 1952', @contact.note
   end
 
